@@ -1,0 +1,19 @@
+#footer {
+    position: fixed;
+    background-color: #015958;
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+
+#footer_text {
+    position: absolute;
+    color: white;
+    font-family: Ubuntu Mono, monospace;
+    font-size: 16px;
+    padding-left: 2%;
+    padding-top: 1%;
+}

@@ -1,0 +1,11 @@
+#side_bar {
+    position: absolute;
+    float: right;
+    width: 20%;
+    height: 600px;
+    top: 10%;
+    left: 75%;
+    padding-bottom: 0;
+    padding-right: 4%;
+    padding-top: 0.7%;
+}
