@@ -1,6 +1,6 @@
 .menu_bar_class {
     vertical-align: top;
-    position: absolute;
+    position: relative;
 }
 
 #menu_bar {
@@ -22,12 +22,14 @@
 
 #to_index_background {
     fill: #025151;
+    position: absolute;
 }
 
 #system_name {
     color: white;
     top: 4px;
-    left: 70px;
+    left: 10px;
+    right: 10px;
     width: 160px;
     height: 70px;
     font-family: Inconsolata, monospace;
@@ -36,9 +38,13 @@
 }
 
 #library_search_button {
-    left: 242px;
+    left: 26px;
 }
 
 #book_search_button {
-    left: 408px;
+    left: 26px;
+}
+
+#to_index_link {
+    text-decoration: none;
 }

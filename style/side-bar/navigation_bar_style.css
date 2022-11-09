@@ -17,7 +17,7 @@
 #navigation_bar {
     background-color: #0CABA8;
     width: 100%;
-    height: 50%;
+    height: 42.5%;
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -37,6 +37,7 @@
     padding-top: 2%;
     padding-bottom: 2%;
     border-radius: 5px;
+    margin-bottom: 0;
 }
 
 #navigation_bar_list {
@@ -46,4 +47,6 @@
     font-size: 24px;
     text-align: center;
     padding-inline-start: 0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
