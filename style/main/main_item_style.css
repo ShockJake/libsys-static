@@ -1,0 +1,37 @@
+.main_item_header {
+    font-family: Inconsolata, monospace;
+    font-size: 28px;
+    color: white;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main_item_separator {
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.main_item_text {
+    font-family: Ubuntu Mono, monospace;
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.main_item_image {
+    position: relative;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    z-index: -1;
+}
