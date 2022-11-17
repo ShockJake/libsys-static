@@ -2,6 +2,7 @@
     position: relative;
     float: left;
     width: 40%;
+    /* todo: remove height as it would be responsive to number of items */
     height: 1700px;
     top: 10%;
     padding: 2% 25% 2% 5%;

@@ -1,17 +1,16 @@
-.help_list_item {
+.help-list-item {
     background-color: transparent;
     line-height: 1.7;
 }
 
-.help_list_item:hover {
+.help-list-item:hover {
     background-color: #015958;
     border-radius: 5px;
 }
 
 #help_bar {
-    background-color: #0CABA8;
+    background-color: rgb(12, 171, 168, 80%);
     width: 100%;
-    height: 35%;
     margin-top: 2%;
 }
 
@@ -31,7 +30,7 @@
 #help_bar_list {
     color: white;
     font-family: Ubuntu Mono, monospace;
-    font-size: 18px;
+    font-size: 24px;
     list-style-type: none;
     padding-inline-start: 0;
     text-align: center;
@@ -57,13 +56,14 @@
     position: relative;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%);
     width: 25px;
+    margin-top: 5%;
 }
 
 #inst_text {
     position: relative;
 }
 
-#footer_text {
+#facebook_text {
     position: relative;
-
+    margin-bottom: 5%;
 }

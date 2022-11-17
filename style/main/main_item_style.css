@@ -27,11 +27,23 @@
     padding-right: 1%;
 }
 
-.main_item_image {
+.main-item-image {
     position: relative;
     width: 98%;
     margin-left: 1%;
     margin-top: 1%;
     border-radius: 5px;
     z-index: -1;
+}
+
+.main_item_image_container {
+    margin: 0;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0%) 60%, #015958);
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.35s;
+}
+
+.main_item_image_container:hover {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0%) 70%, #015958);;
 }
