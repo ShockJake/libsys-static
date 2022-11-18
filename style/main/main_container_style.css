@@ -1,9 +1,12 @@
-.main_container {
-    background-color: rgb(12, 171, 168, 80%);
+.main-container {
+    background-color: rgb(12, 171, 168, 90%);
     width: 160%;
     height: 100%;
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    padding-top: 2%;
+    padding-bottom: 1%;
 }
 
 #news_header_container {
@@ -12,7 +15,6 @@
     width: 90%;
     height: 4%;
     margin-left: 5%;
-    top: 1%;
     border-radius: 5px;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -31,10 +33,11 @@
     width: 90%;
     border-radius: 5px;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: background-color 0.35s ease-out;
 }
 
-.main-item-container.hover {
+.main-item-container:hover {
     background-color: rgb(1, 89, 88);
 }

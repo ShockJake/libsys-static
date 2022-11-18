@@ -1,6 +1,7 @@
 .navigation-list-item {
     background-color: transparent;
     line-height: 1.7;
+    transition: background-color 0.2s;
 }
 
 .navigation-list-item:hover {
@@ -15,7 +16,7 @@
 }
 
 #navigation_bar {
-    background-color: rgb(12, 171, 168, 80%);
+    background-color: rgb(12, 171, 168, 90%);
     width: 100%;
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

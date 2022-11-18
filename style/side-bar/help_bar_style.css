@@ -1,6 +1,7 @@
 .help-list-item {
     background-color: transparent;
     line-height: 1.7;
+    transition: background-color 0.2s;
 }
 
 .help-list-item:hover {
@@ -9,7 +10,7 @@
 }
 
 #help_bar {
-    background-color: rgb(12, 171, 168, 80%);
+    background-color: rgb(12, 171, 168, 90%);
     width: 100%;
     margin-top: 2%;
 }

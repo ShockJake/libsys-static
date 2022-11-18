@@ -1,15 +1,13 @@
-.main_item_header {
+.main-item-header {
     font-family: Inconsolata, monospace;
     font-size: 28px;
     color: white;
     padding-left: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    margin-top: 0;
+    margin-top: 1%;
     margin-bottom: 0;
 }
 
-.main_item_separator {
+.main-item-separator {
     height: 2px;
     background-color: white;
     border-radius: 5px;
@@ -17,7 +15,7 @@
     margin-bottom: 1%;
 }
 
-.main_item_text {
+.main-item-text {
     font-family: Ubuntu Mono, monospace;
     font-size: 20px;
     color: white;
@@ -32,18 +30,14 @@
     width: 98%;
     margin-left: 1%;
     margin-top: 1%;
+    margin-bottom: 0.5%;
     border-radius: 5px;
     z-index: -1;
 }
 
-.main_item_image_container {
+.main-item-image-container {
     margin: 0;
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0%) 60%, #015958);
     border-radius: 5px;
     cursor: pointer;
-    transition-duration: 0.35s;
-}
-
-.main_item_image_container:hover {
-    background-image: radial-gradient(circle, rgba(0, 0, 0, 0%) 70%, #015958);;
 }
