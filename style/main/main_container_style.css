@@ -5,16 +5,15 @@
     border-radius: 5px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
-    padding-top: 2%;
     padding-bottom: 1%;
 }
 
 #news_header_container {
+    margin-top: 0;
     position: relative;
     background-color: rgb(1, 89, 88, 0.6);
-    width: 90%;
+    width: 100%;
     height: 4%;
-    margin-left: 5%;
     border-radius: 5px;
     text-align: center;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -22,7 +21,7 @@
 
 #news_header {
     margin: 0;
-    font-size: 60px;
+    font-size: 42px;
     font-family: Inconsolata, monospace;
     color: white;
 }

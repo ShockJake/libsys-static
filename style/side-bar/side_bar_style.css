@@ -9,13 +9,8 @@
     }
 }
 
-@media all and (max-width: 1023px) {
+@media all and (max-width: 1024px) {
     #sidebar {
-        position: fixed;
-        float: right;
-        width: 20%;
-        padding-bottom: 0;
-        padding-right: 4%;
-        padding-top: 0.7%;
+        display: none;
     }
 }
