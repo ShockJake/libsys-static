@@ -1,9 +1,21 @@
-#sidebar {
-    position: relative;
-    float: right;
-    width: 20%;
-    height: 600px;
-    padding-bottom: 0;
-    padding-right: 4%;
-    padding-top: 0.7%;
+@media all and (min-width: 1024px) {
+    #sidebar {
+        position: relative;
+        float: right;
+        width: 20%;
+        padding-bottom: 0;
+        padding-right: 4%;
+        padding-top: 0.7%;
+    }
+}
+
+@media all and (max-width: 1023px) {
+    #sidebar {
+        position: fixed;
+        float: right;
+        width: 20%;
+        padding-bottom: 0;
+        padding-right: 4%;
+        padding-top: 0.7%;
+    }
 }
