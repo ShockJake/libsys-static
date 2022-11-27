@@ -2,10 +2,9 @@
     #sidebar {
         position: relative;
         float: right;
-        width: 20%;
-        padding-bottom: 0;
-        padding-right: 4%;
-        padding-top: 0.7%;
+        width: 17%;
+        margin-right: 16%;
+        margin-top: 2%;
     }
 }
 
