@@ -1,4 +1,4 @@
-@media all and (min-width: 1024px) {
+@media (min-width: 1024px){
     #main {
         position: relative;
         float: left;
@@ -7,11 +7,20 @@
     }
 }
 
-@media all and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #main {
+        position: relative;
+        float: left;
+        width: 60%;
+        margin: 2% 0 2% 5%;
+    }
+}
+
+@media (max-width: 768px){
     #main {
         position: relative;
         float: unset;
-        width: 75%;
-        margin: 2% 0 2% 12%;
+        width: 90%;
+        margin: 2% 0 2% 5%;
     }
 }
