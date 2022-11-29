@@ -51,6 +51,10 @@
     left: 26px;
 }
 
+#selections_search_button {
+    left: 26px;
+}
+
 #to_index_link {
     text-decoration: none;
 }
