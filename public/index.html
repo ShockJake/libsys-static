@@ -42,11 +42,13 @@
                 Selections
             </button>
         </a>
+        <a id="about_menu_bar" href="/about">
+            <button id="about_button" class="button">
+                <link rel="stylesheet" href="/style/menu_bar/menu_bar_button_style.css">
+                About
+            </button>
+        </a>
     </div>
-
-    <br> <!-- Menu-bar buttons for tablet mode section -->
-
-
 </div>
 
 <!-- Main -->
@@ -54,8 +56,8 @@
     <link rel="stylesheet" href="/style/main/main_style.css">
     <div class="main-container">
         <link rel="stylesheet" href="/style/main/main_container_style.css">
-        <div id="news_header_container">
-            <h1 id="news_header">NEWS</h1>
+        <div class="main-header-container">
+            <h1 class="main-header">NEWS</h1>
         </div>
         <!-- First item start -->
         <div class="main-item-container">
@@ -90,6 +92,14 @@
                 best fantasy world books for primary school children.</p>
         </div>
 
+        <div class="main-item-container">
+            <link rel="stylesheet" href="/style/main/main_item_style.css">
+            <div class="main-item-image-container">
+                <img src="/photo/libraries_map.png" class="main-item-image" alt="Libraries">
+            </div>
+            <h2 class="main-item-header">New libraries are opened</h2>
+        </div>
+
         <!-- Third item start -->
         <div class="main-item-container">
             <link rel="stylesheet" href="/style/main/main_item_style.css">
@@ -106,6 +116,18 @@
                 full potential much faster than you could have ever imagined.
                 This fascinating science will even help you understand why you and those you’re closest to act the way
                 you do and how you can change for the better.</p>
+        </div>
+        <div class="main-item-container">
+            <link rel="stylesheet" href="/style/main/main_item_style.css">
+            <div class="main-item-image-container">
+                <img src="/jpg/the-a-b-c-murders.jpg" class="main-item-image" alt="a-b-c murders photo">
+            </div>
+            <h2 class="main-item-header">The A-B-C Murders by Agata Christie</h2>
+            <hr class="main-item-separator">
+            <p class="main-item-text">The A.B.C. Murders is a work of detective fiction by British writer Agatha
+                Christie, featuring her characters Hercule Poirot, Arthur Hastings and Chief Inspector Japp, as they
+                contend with a series of killings by a mysterious murderer known only as "A.B.C."
+            </p>
         </div>
     </div>
 </div>
@@ -138,22 +160,17 @@
 
     <!-- Help bar -->
     <div id="help_bar" class="help-bar-class">
-        <link rel="stylesheet" href="/style/side-bar/help_bar_style.css">
+        <link rel="stylesheet" href="style/side-bar/help_bar_style.css">
         <h1 id="help_bar_header">Help</h1>
         <ul id="help_bar_list">
-            <li id="ask_librarian_item" class="help-list-item">
-                <a id="ask_librarian_href" href="/ask_librarian_page">
-                    <b>Ask librarian</b>
-                </a>
-            </li>
             <li class="help-list-item"><b>+48001112233</b></li>
             <li class="help-list-item"><b>libsys@mail.com</b></li>
             <li class="help-list-item">
-                <img id="inst_icon" src="/svg/icons8-instagram.svg" alt="instagram">
+                <img id="inst_icon" src="svg/icons8-instagram.svg" alt="instagram">
                 <b id="inst_text"> @libsys </b>
             </li>
             <li class="help-list-item">
-                <img id="facebook_icon" src="/svg/icons8-facebook.svg" alt="facebook">
+                <img id="facebook_icon" src="svg/icons8-facebook.svg" alt="facebook">
                 <b id="facebook_text"> libsys-fb </b>
             </li>
         </ul>
@@ -162,7 +179,7 @@
 
 <!-- Footer -->
 <div id="footer">
-    <link rel="stylesheet" href="/style/footer/footer_style.css">
+    <link rel="stylesheet" href="style/footer/footer_style.css">
     <div id="footer_text_container">
         <span id="footer_text">&copy; Stanislav Lysunenko; Jagiellonian University</span>
     </div>
