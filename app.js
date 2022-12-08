@@ -7,17 +7,13 @@ const port = 3000;
 
 
 const server = http.createServer((req, res) => {
-    if (req.url === '/') {
-        readPage('./public/index.html', res);
-    } else if (req.url.endsWith('.html')) {
-        const pagePath = path.join(__dirname, 'public', req.url)
-        readPage(pagePath, res);
+    if (req.url === ('/') || !req.url.includes('.')) {
+        matchPage(req.url, res);
     } else if (req.url.match("\.css$")) {
         const cssPath = path.join(__dirname, 'public', req.url);
         const fileStream = fs.createReadStream(cssPath, "UTF-8");
         res.writeHead(200, {"Content-Type": "text/css"});
         fileStream.pipe(res);
-
     } else if (req.url.match("\.png$")) {
         const imagePath = path.join(__dirname, 'public', req.url);
         const fileStream = fs.createReadStream(imagePath);
@@ -38,9 +34,25 @@ const server = http.createServer((req, res) => {
     }
 });
 
-function readPage(page_name, response) {
-    fs.readFile(page_name, "UTF-8", (err, html) => {
-        console.log('Reading page: ' + page_name);
+function matchPage(url, response) {
+    
+    if (url === '/') {
+        const pagePath = path.join(__dirname, 'public', 'index.html')
+        readPage('index', pagePath, response)
+    } else {
+        console.log('URL: ' + url)
+        const pageName = url.substr(1)
+        const pagePath = path.join(__dirname, 'public', 'pages/' + pageName + '.html')
+
+        console.log('Page name - ' + pageName + ' matched path: ' + pagePath)
+        readPage(pageName, pagePath, response)
+
+    }
+}
+
+function readPage(pageName, pagePath,  response) {
+    fs.readFile(pagePath, "UTF-8", (err, html) => {
+        console.log('Reading page: ' + pageName);
         if (err) {
             console.error(err)
             badResponse(response)
@@ -53,7 +65,7 @@ function readPage(page_name, response) {
 
 function badResponse(response) {
     response.writeHead(404, {"Content-Type": "text/html"});
-    response.end("Something went wrong");
+    readPage('error_page', __dirname + '/public/pages/error_page.html', response)
 }
 
 server.listen(port, hostname, () => {
